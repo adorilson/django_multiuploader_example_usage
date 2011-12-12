@@ -12,12 +12,9 @@ from django.utils import simplejson
 from sorl.thumbnail import get_thumbnail
 
 
-from django.views.decorators.csrf import csrf_exempt
-
 import logging
 log = logging
 
-@csrf_exempt
 def multiuploader_delete(request, pk):
     """
     View for deleting photos with multiuploader AJAX plugin.
@@ -34,7 +31,6 @@ def multiuploader_delete(request, pk):
         log.info('Received not POST request to delete image view')
         return HttpResponseBadRequest('Only POST accepted')
 
-@csrf_exempt
 def multiuploader(request):
     """
     Main Multiuploader module.
