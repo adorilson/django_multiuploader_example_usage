@@ -1,3 +1,5 @@
+This a version of Iurii Garmash's Django Multiuploader that works on Django 1.1
+
 Django Multiuploader Plugin
 ----------------------------------------------------------------------
 
@@ -16,7 +18,15 @@ Requirements:
 
     - PIL(Python Imaging Library) (for sorl)
     - sorl-thumbnail's(http://thumbnail.sorl.net/) (for thumbnails generation)
-    - Django 1.2.5 +
+    - Django 1.1 +
+
+Installation
+----------------------------------------------------------------------
+
+* run ./manage.py syncdb
+* run ./manage.py runserver
+* go to localhost:8000/
+* upload some files
 
 Acess:
 ----------------------------------------------------------------------
